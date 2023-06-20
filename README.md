@@ -27,10 +27,26 @@ Non-Bundled Plugins:
 com.developerphil.adbidea (1.6.11)
 ```
 
-### 2. Add implementations on :app build gradle
+### 2. Add implementations on the `:app` build gradle
 
 ```
 implementation("app.rive:rive-android:5.0.0")
 implementation("androidx.startup:startup-runtime:1.1.1")
 ```
 
+### 3. Add the Rive initializer on the Android Manifest
+
+```
+<provider
+    android:name="androidx.startup.InitializationProvider"
+    android:authorities="com.rive.example.androidx-startup"
+    android:exported="false"
+    tools:node="merge">
+    <meta-data android:name="app.rive.runtime.kotlin.RiveInitializer"
+    android:value="androidx.startup" />
+</provider>
+```
+
+### 4. Add the `raw` Resource Folder with a `.riv` file
+
+Riv Files can be browsed [here](https://rive.app/community/).
