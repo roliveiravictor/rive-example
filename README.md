@@ -1,7 +1,7 @@
 # rive-example
 Example of how to use Rive with Jetpack Compose
 
-### New Project
+### 1. New Project
 
 - Empty (Compose) Activity with
 
@@ -25,5 +25,12 @@ Registry:
 
 Non-Bundled Plugins:
 com.developerphil.adbidea (1.6.11)
+```
+
+### 2. Add implementations on :app build gradle
+
+```
+implementation("app.rive:rive-android:5.0.0")
+implementation("androidx.startup:startup-runtime:1.1.1")
 ```
 

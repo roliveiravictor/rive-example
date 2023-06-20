@@ -51,7 +51,8 @@ android {
 }
 
 dependencies {
-
+    implementation("app.rive:rive-android:5.0.0")
+    implementation("androidx.startup:startup-runtime:1.1.1")
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
