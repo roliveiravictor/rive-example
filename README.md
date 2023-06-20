@@ -50,3 +50,19 @@ implementation("androidx.startup:startup-runtime:1.1.1")
 ### 4. Add the `raw` Resource Folder with a `.riv` file
 
 Riv Files can be browsed [here](https://rive.app/community/).
+
+### 5. Call the Rive Animation View
+
+```
+AndroidView(
+    modifier = Modifier,
+    factory = { context ->
+        RiveAnimationView(context).also {
+            it.setRiveResource(
+                resId = R.raw.basketball,
+                alignment = CENTER
+            )
+        }
+    }
+)
+```
