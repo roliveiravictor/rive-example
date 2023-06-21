@@ -66,3 +66,7 @@ AndroidView(
     }
 )
 ```
+
+### 6. Result
+
+<img src="https://github.com/roliveiravictor/rive-example/assets/33610271/2f4a16e1-5b3e-454d-842f-7c762c63fd46" height="480">
